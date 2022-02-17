@@ -1,0 +1,2 @@
+# PermissionTest
+fragment中弹出dialogFragment，申请多个权限demo
