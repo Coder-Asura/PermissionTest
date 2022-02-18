@@ -23,6 +23,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/WorkSpace/GitHub/PermissionTest/app/src/main/res/layout/activity_permission.xml" value="0.276268115942029" />
+        <entry key="..\:/WorkSpace/GitHub/PermissionTest/app/src/main/res/layout/fragment_bottom_dialog_permission.xml" value="0.2015625" />
+        <entry key="..\:/WorkSpace/GitHub/PermissionTest/app/src/main/res/layout/fragment_dialog_permission.xml" value="0.2015625" />
+        <entry key="..\:/WorkSpace/GitHub/PermissionTest/app/src/main/res/layout/fragment_permission.xml" value="0.2015625" />
       </map>
     </option>
   </component>

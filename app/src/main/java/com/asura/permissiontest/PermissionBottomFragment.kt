@@ -59,8 +59,8 @@ class PermissionBottomFragment : BottomSheetDialogFragment() {
     private fun requestPermission() {
         requestPermissions(
             arrayOf(
-                Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.CAMERA
+                Manifest.permission.READ_CONTACTS,
+                Manifest.permission.BODY_SENSORS
             ), 100
         )
     }
@@ -79,9 +79,9 @@ class PermissionBottomFragment : BottomSheetDialogFragment() {
                 }
             }
             if (notAllowList.isEmpty()) {
-                Toast.makeText(requireContext(), "全部允许", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "BottomSheetDialogFragment 全部允许", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(requireContext(), "$notAllowList 没允许", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "BottomSheetDialogFragment $notAllowList 没允许", Toast.LENGTH_SHORT).show()
             }
         }
 

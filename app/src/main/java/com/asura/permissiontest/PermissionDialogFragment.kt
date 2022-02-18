@@ -31,7 +31,7 @@ class PermissionDialogFragment : DialogFragment() {
         )
         view.findViewById<Button>(R.id.button6).setOnClickListener {
             Log.d("lxdlxd", "点击申请权限")
-            Toast.makeText(requireContext(), "点击申请权限", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), "DialogFragment 点击申请权限", Toast.LENGTH_SHORT).show()
             requestPermission()
         }
 
@@ -58,8 +58,8 @@ class PermissionDialogFragment : DialogFragment() {
     private fun requestPermission() {
         requestPermissions(
             arrayOf(
-                Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.CAMERA
+                Manifest.permission.READ_PHONE_STATE,
+                Manifest.permission.ACCESS_COARSE_LOCATION
             ), 100
         )
     }
@@ -78,9 +78,9 @@ class PermissionDialogFragment : DialogFragment() {
                 }
             }
             if (notAllowList.isEmpty()) {
-                Toast.makeText(requireContext(), "全部允许", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "DialogFragment 全部允许", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(requireContext(), "$notAllowList 没允许", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "DialogFragment $notAllowList 没允许", Toast.LENGTH_SHORT).show()
             }
         }
 
